@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — DaiLer AI</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">DA</div>
+      <div class="brand-text"><h1>DaiLer AI</h1><p class="tag">Insight · Rank · Recommend</p></div>
+    </div>
+    <button class="nav-toggle" id="navToggle3" aria-label="Open menu">☰</button>
+    <nav class="main-nav" id="mainNav3">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link btn-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <section>
+      <h2>Services</h2>
+      <p>Pick a module or get a full-suite solution.</p>
+
+      <div class="service-grid">
+        <div class="flip-card" tabindex="0" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h4>Resume Parsing</h4>
+              <p>Extract skills, roles, education</p>
+            </div>
+            <div class="flip-card-back">
+              <p>Outputs structured profiles for quick searching & ranking.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h4>Candidate Ranking</h4>
+              <p>Customizable weighted scoring</p>
+            </div>
+            <div class="flip-card-back">
+              <p>Explainable scores and shortlists for evaluators.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h4>Interview Scheduling</h4>
+              <p>Auto-schedule interviews</p>
+            </div>
+            <div class="flip-card-back">
+              <p>Syncs with calendar and sends invites automatically.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 DaiLer AI</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

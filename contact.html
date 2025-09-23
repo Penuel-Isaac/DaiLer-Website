@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — DaiLer AI</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">DA</div>
+      <div class="brand-text"><h1>DaiLer AI</h1><p class="tag">Insight · Rank · Recommend</p></div>
+    </div>
+    <button class="nav-toggle" id="navToggle4" aria-label="Open menu">☰</button>
+    <nav class="main-nav" id="mainNav4">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link btn-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+
+      <div class="contact-info">
+        <p>📧 <a href="mailto:penuelisaac11@gmail.com">penuelisaac11@gmail.com</a></p>
+        <p>📞 <a href="tel:+2347064407590">07064407590</a></p>
+      </div>
+
+      <form id="contactForm" onsubmit="return submitContact(event)">
+        <label>First name
+          <input type="text" id="firstName" name="from_name" required>
+        </label>
+        <label>Last name
+          <input type="text" id="lastName" name="last_name">
+        </label>
+        <label>Email
+          <input type="email" id="email" name="reply_to" required>
+        </label>
+        <label>Phone
+          <input type="tel" id="phone" name="phone">
+        </label>
+        <label>Message
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </label>
+
+        <label class="checkbox"><input type="checkbox" id="consent" name="consent" required> I agree to be contacted</label>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send Message</button>
+          <button class="btn" type="reset">Reset</button>
+        </div>
+
+        <div id="formMessage" class="form-message" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 DaiLer AI</p>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

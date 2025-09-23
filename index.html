@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DaiLer AI — Candidate Analysis</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="DaiLer AI — fast, fair candidate analysis and ranking for hiring teams.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">DA</div>
+      <div class="brand-text">
+        <h1>DaiLer AI</h1>
+        <p class="tag">Insight · Rank · Recommend</p>
+      </div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link btn-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h2 class="headline">Find best-fit candidates faster with AI</h2>
+        <p class="lead">DaiLer analyzes resumes, ranks applicants, and provides transparent explanations so teams hire confidently.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="services.html">See Services</a>
+          <button class="btn ghost" id="openDemoBtn">Run Quick Demo</button>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card floating" id="demoCard">
+          <h3>Quick Demo</h3>
+          <p>Rank a sample shortlist by experience weight.</p>
+          <label>Experience weight (0–1): <input id="expWeight" type="number" min="0" max="1" step="0.1" value="0.6"></label>
+          <button class="btn orange" id="rankBtn">Rank Candidates</button>
+          <div id="rankResult" class="rank-result" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h3>Why DaiLer?</h3>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h4>AI-Powered Scoring</h4>
+          <p>Weighted scoring across skills, experience, and education.</p>
+        </article>
+        <article class="feature-card">
+          <h4>Explainable Results</h4>
+          <p>See the evidence behind each candidate score.</p>
+        </article>
+        <article class="feature-card">
+          <h4>Integration Ready</h4>
+          <p>Export ranked lists to your LMS or ATS easily.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <div class="stat-number" data-target="120">0</div>
+        <div class="stat-label">Candidates screened</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="95">0</div>
+        <div class="stat-label">% Time saved</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="50">0</div>
+        <div class="stat-label">Clients onboarded</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 DaiLer AI · Built for PLP Hackathon</p>
+  </footer>
+
+  <!-- Include EmailJS SDK on every page (safe) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
